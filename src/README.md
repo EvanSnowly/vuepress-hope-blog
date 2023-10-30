@@ -4,26 +4,18 @@ layout: BlogHome
 icon: home
 title: 博客主页
 heroImageStyle: { "border-radius":"99999px" }
-heroImage: https://raw.githubusercontent.com/EvanSnowly/EvanSnowly.github.io/master/static/here.jpg
+# heroImage: https://raw.githubusercontent.com/EvanSnowly/EvanSnowly.github.io/master/static/here.jpg
+
 heroText: Snow' blog
-heroFullScreen: false   
-bgImage: https://github.com/EvanSnowly/EvanSnowly.github.io/blob/master/static/bg.jpg?raw=true
+heroFullScreen: false        
+bgImage: http://img.netbian.com/file/2023/0926/234201vj2AV.jpg
 tagline: Don't be influenced by others
 projects:
   - icon: project
-    name: Csgo
-    desc: Ct和T的现代化战争
-    link: https://你的项目链接
+    name: vuepress-blog
+    desc: 本项目的github地址,dev
+    link: https://github.com/EvanSnowly/vuepress-hope-blog
 
-  - icon: link
-    name: 英雄联盟
-    desc: Moba 5V5公平竞技 Pc
-    link: https://链接地址
-
-  - icon: book
-    name: 王者荣耀
-    desc: Moba 5V5公平竞技 Phone
-    link: https://你的书籍链接
 
 #  - icon: article
 #    name: 文章名称

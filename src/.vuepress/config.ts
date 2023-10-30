@@ -1,7 +1,8 @@
-import {defineUserConfig} from "vuepress";
+import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import {hopeTheme} from "vuepress-theme-hope";
-import {searchProPlugin} from "vuepress-plugin-search-pro";
+import { hopeTheme } from "vuepress-theme-hope";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
+
 
 type baseType = '/' | `/${string}/`;
 
@@ -17,11 +18,11 @@ export default defineUserConfig({
             // 为分类和标签添加索引
             customFields: [
                 {
-                    getter: (page) => page.frontmatter.category,
+                    getter: (page) => page.frontmatter.category as 'string | string[] | null',
                     formatter: "分类：$content",
                 },
                 {
-                    getter: (page) => page.frontmatter.tag,
+                    getter: (page) => page.frontmatter.tag as 'string | string[] | null',
                     formatter: "标签：$content",
                 },
             ],
@@ -31,22 +32,43 @@ export default defineUserConfig({
 
     lang: "zh-CN",
     title: "个人博客",
-    description: "vuepress-theme-hope 的博客演示",
+    description: "个人博客",
+
+
 
 
     theme: hopeTheme({
+        iconAssets: "iconfont",
+        
+
+        navbar: [
+            {
+              text: "关于作者",
+              link: "/intro.md",
+              icon: "speed",
+  
+            },
+          ],
 
         plugins: {
             blog: true,
+            mdEnhance: {
+                echarts: true,
+                card:true
+              }, 
         },
+
+        fullscreen: true,
+
         blog: {
             roundAvatar: true,
             name: 'wuxuefeng',
-            avatar: 'https://raw.githubusercontent.com/EvanSnowly/EvanSnowly.github.io/master/static/here.jpg',
+            avatar:'//qpic.y.qq.com/music_cover/a89rYTI7e7w2jljBNMH83m1jINNvVK8oCgia1BAyad9DoYNC5yX4ibGA/600?n=1',
+            // avatar: 'hero1.jpg',
             description: 'Don\'t be influenced by others',
             medias: {
                 GitHub: "https://github.com/EvanSnowly",
-                'Snow的歌单': [
+                "Snow的歌单": [
                     // 链接
                     "https://c6.y.qq.com/base/fcgi-bin/u?__=zzVxjETSEZuL",
                     // 图标 SVG 字符串
