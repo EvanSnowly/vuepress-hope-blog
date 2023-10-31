@@ -41,6 +41,14 @@ export default defineUserConfig({
         iconAssets: "iconfont",
         
 
+        // sidebar:[
+        //     {
+        //         text: "个人介绍",
+        //         link: "intro.md",
+        //         icon: "lightbulb",
+        //     }
+        // ],
+        sidebar: false,
         navbar: [
             {
               text: "关于作者",
@@ -54,7 +62,8 @@ export default defineUserConfig({
             blog: true,
             mdEnhance: {
                 echarts: true,
-                card:true
+                card:true,
+                mark:true
               }, 
         },
 
