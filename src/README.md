@@ -8,8 +8,8 @@ heroImageStyle: { "border-radius":"99999px" }
 
 heroText: Snow' blog
 heroFullScreen: false        
-bgImage: http://img.netbian.com/file/2023/0926/234201vj2AV.jpg
-tagline: Don't be influenced by others
+bgImage: http://img.netbian.com/file/2023/0430/235407PyKaM.jpg
+tagline: Don't be influenced by other
 projects:
   - icon: project
     name: vuepress-blog

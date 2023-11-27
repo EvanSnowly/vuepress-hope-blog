@@ -48,7 +48,7 @@ export default defineUserConfig({
         //         icon: "lightbulb",
         //     }
         // ],
-        sidebar: false,
+        sidebar:"heading",
         navbar: [
             {
               text: "关于作者",
@@ -64,7 +64,7 @@ export default defineUserConfig({
                 echarts: true,
                 card:true,
                 mark:true
-              }, 
+              },
         },
 
         fullscreen: true,
@@ -72,9 +72,9 @@ export default defineUserConfig({
         blog: {
             roundAvatar: true,
             name: 'wuxuefeng',
-            avatar:'//qpic.y.qq.com/music_cover/a89rYTI7e7w2jljBNMH83m1jINNvVK8oCgia1BAyad9DoYNC5yX4ibGA/600?n=1',
+            avatar:'https://qpic.y.qq.com/music_cover/a89rYTI7e7w2jljBNMH83hOGmNibyLUISXBK8Et7riauicPibUOK7cJVVA/600?n=1',
             // avatar: 'hero1.jpg',
-            description: 'Don\'t be influenced by others',
+            description: 'Most Valuable Player ',
             medias: {
                 GitHub: "https://github.com/EvanSnowly",
                 "Snow的歌单": [
